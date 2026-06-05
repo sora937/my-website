@@ -3,62 +3,140 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>A1 Stop Motion Project</title>
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:white;
-    text-align:center;
+font-family:Arial,sans-serif;
+background:#ffffff;
+color:#333;
+line-height:1.8;
+}
+
+nav{
+position:sticky;
+top:0;
+background:white;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+z-index:100;
+}
+
+nav a{
+color:#0057b8;
+text-decoration:none;
+margin:0 12px;
+font-weight:bold;
 }
 
 header{
-    padding:60px 20px;
+padding:80px 20px;
+text-align:center;
 }
 
 h1{
-    color:#0057b8;
-    font-size:48px;
+color:#0057b8;
+font-size:48px;
+margin-bottom:20px;
 }
 
 .members{
-    margin:30px 0;
-    font-size:20px;
+font-size:22px;
+font-weight:bold;
+margin-bottom:20px;
 }
 
-img{
-    width:250px;
-    border-radius:20px;
+.intro{
+max-width:800px;
+margin:auto;
+font-size:18px;
 }
 
 section{
-    max-width:800px;
-    margin:auto;
-    padding:30px;
+max-width:1000px;
+margin:auto;
+padding:60px 20px;
 }
 
 h2{
-    color:#0057b8;
+color:#0057b8;
+margin-bottom:25px;
+font-size:36px;
+text-align:center;
 }
 
-.menu{
-    background:#f5f5f5;
-    padding:20px;
+.member-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
 }
 
-.menu a{
-    margin:10px;
-    color:#0057b8;
-    text-decoration:none;
-    font-weight:bold;
+.member-box{
+width:280px;
+background:#f5f5f5;
+padding:20px;
+border-radius:15px;
+text-align:center;
 }
+
+.member-box img{
+width:220px;
+height:300px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+.card{
+background:#f8f8f8;
+padding:25px;
+border-radius:15px;
+}
+
+footer{
+background:#f5f5f5;
+padding:30px;
+text-align:center;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:38px;
+}
+
+.members{
+font-size:18px;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+.member-box{
+width:100%;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="menu">
+<nav>
 <a href="#home">Home</a>
 <a href="#about">About Us</a>
 <a href="#storyline">Storyline</a>
@@ -66,77 +144,169 @@ h2{
 <a href="#storyboard">Storyboard</a>
 <a href="#animation">Animation</a>
 <a href="#reflection">Reflection</a>
-</div>
+</nav>
 
 <header id="home">
+
 <h1>A1 Stop Motion Project</h1>
 
 <div class="members">
-Sujing Han • Kecen Qian • Qianqian Yu
+Qian Qianyu • Qian Kecen • Su Jinghan
 </div>
 
-<p>
+<p class="intro">
 Welcome to our Stop Motion Animation Project Website.
+This website showcases our creative process, including
+storyline development, design planning, storyboard creation,
+animation production and reflection.
 </p>
+
 </header>
 
 <section id="about">
+
 <h2>About Us</h2>
 
-<p>
-Sujing Han – Website Design and Project Organisation
-</p>
+<div class="member-container">
 
+<div class="member-box">
+<img src="qianqianyu.jpg">
+<h3>Qian Qianyu</h3>
 <p>
-Kecen Qian – Character Design and Storyboard Creation
+Photography and Animation Production
 </p>
+</div>
 
+<div class="member-box">
+<img src="qiankecen.jpg">
+<h3>Qian Kecen</h3>
 <p>
-Qianqian Yu – Photography and Animation Production
+Character Design and Storyboard Creation
 </p>
+</div>
+
+<div class="member-box">
+<img src="sujinghan.jpg">
+<h3>Su Jinghan</h3>
+<p>
+Website Design and Project Organisation
+</p>
+</div>
+
+</div>
 
 </section>
 
 <section id="storyline">
+
 <h2>Storyline</h2>
 
+<div class="card">
+
 <p>
-Write your animation story here.
+Our stop motion animation tells the story of a group of students
+who embark on a creative adventure. Throughout the journey,
+they face challenges, work together as a team and discover the
+importance of friendship, creativity and perseverance.
 </p>
+
+</div>
+
 </section>
 
 <section id="design">
+
 <h2>Design</h2>
 
+<div class="card">
+
 <p>
-Add your design sketches and planning images here.
+This section presents our design process, including character
+development, scene planning and prop preparation. Careful design
+helped us visualise the story before filming.
 </p>
+
+</div>
+
 </section>
 
 <section id="storyboard">
+
 <h2>Storyboard</h2>
 
+<div class="card">
+
 <p>
-Add storyboard images here.
+The storyboard was created to organise each scene and camera
+angle before production. It provided a clear guide for the
+animation process.
 </p>
+
+</div>
+
 </section>
 
 <section id="animation">
+
 <h2>Animation</h2>
 
+<div class="card">
+
 <p>
-Upload your final animation video here.
+Our final stop motion animation demonstrates the outcome of our
+planning, teamwork and creativity throughout the project.
 </p>
+
+<p>
+(Animation video can be uploaded here.)
+</p>
+
+</div>
+
 </section>
 
 <section id="reflection">
+
 <h2>Reflection</h2>
 
+<div class="card">
+
+<h3>Qian Qianyu</h3>
+
 <p>
-Describe what your team learned during this project.
+I learned how to create stop motion animation and improve my
+photography skills during this project.
 </p>
+
+<br>
+
+<h3>Qian Kecen</h3>
+
+<p>
+I improved my ability to design characters and create effective
+storyboards for visual storytelling.
+</p>
+
+<br>
+
+<h3>Su Jinghan</h3>
+
+<p>
+I learned how to organise a project, collaborate with teammates
+and develop a website to showcase our work.
+</p>
+
+</div>
+
 </section>
 
+<footer>
+
+<p>
+A1 Stop Motion Project © 2025
+</p>
+
+</footer>
+
 </body>
-</html>
 </html>
